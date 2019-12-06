@@ -26,24 +26,24 @@
  - Run the demo by typing "sudo python Autofocus.py" in the terminal.
 ### How to take a still using raspsitill command and store it locally 
 ```Bash
- - raspistill -o firstimage.jpg
+  raspistill -o firstimage.jpg
 ``` 
 ### How to take a video using raspsitill command and store it locally 
 This command will save a 5 second video file locally. Note default video time is 5 sec, which can be varied using -t 
 ```Bash
- - raspivid -o vid.h264
+  raspivid -o vid.h264
  ```
 ### MP4 Video Format
 The Pi captures video as a raw H264 video stream. Many media players will refuse to play it, or play it at an incorrect speed, unless it is "wrapped" in a suitable container format like MP4. The easiest way to obtain an MP4 file from the raspivid command is using MP4Box.
 
-Install MP4Box and wrap MP4 around your existing raspivid output, like this:
+ - Install MP4Box and wrap MP4 around your existing raspivid output, like this:
 ```Bash
 #Install gpac
 sudo apt install -y gpac
 # Wrap the raw video with an MP4 container: 
 MP4Box -add vid.h264 vid.mp4
 ```
-Alternatively, capture your raw video with raspivid and wrap it in an MP4 container like this:
+ - Alternatively, capture your raw video with raspivid and wrap it in an MP4 container like this:
 ```Bash
 # Capture 30 seconds of raw video at 640x480 and 150kB/s bit rate into a pivideo.h264 file:
 raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264 
