@@ -35,12 +35,12 @@ This command will save a 5 second video file locally. Note default video time is
  ```
 ### MP4 Video Format
 The Pi captures video as a raw H264 video stream. Many media players will refuse to play it, or play it at an incorrect speed, unless it is "wrapped" in a suitable container format like MP4. The easiest way to obtain an MP4 file from the raspivid command is using MP4Box.
-Install MP4Box with this command:
+
+Install MP4Box and wrap MP4 around your existing raspivid output, like this:
 ```Bash
+#Install gpac
 sudo apt install -y gpac
-```
-Then wrap MP4 around your existing raspivid output, like this:
-```Bash
+# Wrap the raw video with an MP4 container: 
 MP4Box -add vid.h264 vid.mp4
 ```
 Alternatively, capture your raw video with raspivid and wrap it in an MP4 container like this:
