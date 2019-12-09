@@ -25,11 +25,24 @@ Please run the below command to install all the required packages
 ```
 pip install -r requirements.txt
 ```
+### Dropbox Setup
+* Follow the link given for dropbox above, then sign in with your gmail account and create an app like below
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/Dropbox_app.png)
+* Generate your API key and input it in conf.json file
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/generate_API.png)
+
 ### Running the tests
 Please run the below command to run the surveillance camera
 ```
 python pi_surveillance.py --conf conf.json
 ```
 ### Results
-The security surveillance video will be running all the time and When a person moves in the room, the it detects the person moving send an image frame to the dropbox linked.
+The security surveillance video streams all the time with unoccupied status and when a person moves in the room, then opencv helps to detect the person and the staus changes to "occupied" and an image of particular frame with the person will be sent to the dropbox account linked.
+* Below picture is when I was in the room
 ![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/OccupiedStatus.png)
+* Created App in the dropbox has the received images
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/3_upload_dropbox.png)
+* Teminal updates
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/3_upload_terminal.png)
+* Dropbox home looks this way
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/dropbox_home.png)
