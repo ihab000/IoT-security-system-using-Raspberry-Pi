@@ -31,3 +31,5 @@ Please run the below command to run the surveillance camera
 python pi_surveillance.py --conf conf.json
 ```
 ### Results
+The security surveillance video will be running all the time and When a person moves in the room, the it detects the person moving send an image frame to the dropbox linked.
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/OccupiedStatus.png)
