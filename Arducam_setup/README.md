@@ -1,7 +1,7 @@
-                                         # Raspberry Pi camera setup
+                                         ### Raspberry Pi camera setup
   This repository contains the various methods to connect and test the Raspberry Pi Camera module 
 
-## Directory Structure
+### Directory Structure
     |__ Arducam_setup              
        |__ Cam_Access_using_Opencv                
        |__ Motion_Detection                       
