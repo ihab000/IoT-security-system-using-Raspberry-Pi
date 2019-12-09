@@ -1,6 +1,6 @@
                                                  # IOT Home_Surveillance
-   To build a security system that runs on Raspberry Pi to detect the motion and capture the picture of the person and send image notification to my dropbox API. 
-
+##  Abstract:
+  To build a security system that runs on Raspberry Pi to detect the motion and capture the picture of the person and send image notification to my dropbox API. As I live in an apartment, where the maintainence people also have keys for every apartment in the building. I wanted to install my own raspberry pi surveillance camera to monitor if anyone enters my apartments when I am not at home. Hence I turn on my raspi server when I leave home and will get the updates remotely in my dropbox if someone enters my house. 
 
 ## Directory Structure
     |__IOT_Home_Surveillance              # IOT Home Surveillance Project directory
@@ -25,6 +25,9 @@ Please run the below command to install all the required packages
 ```
 pip install -r requirements.txt
 ```
+### Hardware Installation at home
+* I have installed the raspberri pi and hardware set up in my living room entrance
+![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/Hardware_setup.jpg)
 ### Dropbox Setup
 * Follow the link given for dropbox above, then sign in with your gmail account and create an app like below
 ![alt text](https://github.com/sooryanivedhaashokan/IoT-security-system-using-Raspberry-Pi/blob/master/IOT_Home_Surveillance/result_snapshots/Dropbox_app.png)
