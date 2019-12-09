@@ -1,5 +1,5 @@
                                                  # IoT-security-system-using-Raspberry-Pi
-  This repository has various folders with all the learnings and work done with raspberry pi 3B+
+  This repository contains all the work done with raspberry pi 3B+ 
 
 ## Directory Structure
     |__IoT-security-system-using-Raspberry-Pi              
